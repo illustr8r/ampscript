@@ -1,0 +1,7 @@
+%%[
+Set @currentDate = FormatDate(Now(), "MM/dd/yyyy")
+Set @futureDate = "01/29/2021"
+Set @daysUntil = DateDiff(@currentDate,@futureDate, 'D')
+Set @weeksUntil = Divide(@daysUntil,7)
+Set @weeksUntil = FormatNumber(@weeksUntil, "N0", "en-US")
+]%%
